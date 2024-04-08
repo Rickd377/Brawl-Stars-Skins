@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.table-box {
+  margin: 50px auto;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 10px auto;
+  font-family: sans-serif;
+  background: transparent;
+  padding: 12px 0px;
+  color: #555;
+  font-size: 13px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+  border-radius: 5px;
+  position: relative;
+}
+
+.table-cell {
+  display: table-cell;
+  width: 30%;
+  text-align: center;
+  padding: 4px 0px;
+  border-right: 1px solid #d6d4d4;
+  vertical-align: middle;
+}
+
+.table-head {
+  background: #8665f7;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+  color: #fff;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table-head .table-cell {
+  border-right: none;
+}
+
+.last-cell {
+  border-right: none;
+}
+
+.brawler {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.brawler:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 15px;
+  left: 0;
+  top: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.shelly:before {
+  background-color: #b8edff;
+}
+
+.nita:before,
+.colt:before,
+.bull:before,
+.brock:before,
+.el-primo:before,
+.barley:before,
+.poco:before,
+.rosa:before {
+  background-color: #5afe01;
+}
+
+.jessie:before,
+.dynamike:before,
+.tick:before,
+.bit:before,
+.rico:before,
+.darryl:before,
+.penny:before,
+.carl:before,
+.jacky:before,
+.gus:before {
+  background-color: #0271ff;
+}
+
+.bo:before,
+.emz:before,
+.stu:before,
+.piper:before,
+.pam:before,
+.frank:before,
+.bibi:before,
+.bea:before,
+.nani:before,
+.edgar:before,
+.griff:before,
+.grom:before,
+.bonnie:before,
+.gale:before,
+.colette:before,
+.belle:before,
+.ash:before,
+.lola:before,
+.sam:before,
+.mandy:before,
+.maisie:before,
+.hank:before,
+.pearl:before,
+.larry:before,
+.angelo:before {
+  background-color: #d500ff;
+}
+
+.mortis:before,
+.tara:before,
+.gene:before,
+.max:before,
+.mr-p:before,
+.sprout:before,
+.byron:before,
+.squeek:before,
+.lou:before,
+.ruffs:before,
+.buzz:before,
+.fang:before,
+.eve:before,
+.janet:before,
+.otis:before,
+.buster:before,
+.grey:before,
+.r-t:before,
+.willow:before,
+.doug:before,
+.chuck:before,
+.charlie:before,
+.mico:before,
+.melodie:before {
+  background-color: #ff1603;
+}
+
+.spike:before,
+.crow:before,
+.leon:before,
+.sandy:before,
+.amber:before,
+.meg:before,
+.surge:before,
+.chester:before,
+.cordelius:before,
+.kit:before {
+  background-color: #f9ff01;
+}
+
+.brawler {
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rare,
+.super-rare,
+.epic,
+.mythic,
+.legendary {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-weight: 600;
+  color: #777;
+  padding-left: 15px;
+}
