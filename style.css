@@ -6,16 +6,17 @@
 :root {
     --default: #b8edff;
     --rare: #5afe01;
-    --no-skin-rare: #3fb201;
+    --no-skin-rare: rgba(63, 178, 1, 0.3);
     --super-rare: #0271ff;
-    --no-skin-super-rare: #004fb4;
+    --no-skin-super-rare: rgba(0, 79, 180, 0.3);
     --epic: #d500ff;
-    --no-skin-epic: #9500b3;
+    --no-skin-epic: rgba(149, 0, 179, 0.3);
     --mythic: #ff1603;
-    --no-skin-mythic: #b50e00;
+    --no-skin-mythic: rgba(181, 14, 0, 0.3);
     --legendary: #f9ff01;
-    --no-skin-legendary: #afb300;
+    --no-skin-legendary: rgba(175, 179, 0, 0.3);
     --roboto: "Roboto", sans-serif;
+    --no-skin: rgba(0, 0, 0, 0.1);
 }
 
 .table-box {
@@ -319,8 +320,10 @@ input {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
