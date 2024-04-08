@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+:root {
+    --default: #b8edff;
+    --rare: #5afe01;
+    --no-skin-rare: #3fb201;
+    --super-rare: #0271ff;
+    --no-skin-super-rare: #004fb4;
+    --epic: #d500ff;
+    --no-skin-epic: #9500b3;
+    --mythic: #ff1603;
+    --no-skin-mythic: #b50e00;
+    --legendary: #f9ff01;
+    --no-skin-legendary: #afb300;
+}
+
 .table-box {
   margin: 50px auto;
 }
@@ -64,8 +78,59 @@
   border-radius: 5px 0 0 5px;
 }
 
+.amber:before,
+.meg:before,
+.chester:before {
+    background-color: var(--no-skin-legendary) !important;
+
+}
+
+.byron:before,
+.fang:before,
+.eve:before,
+.otis:before,
+.buster:before,
+.r-t:before,
+.willow:before,
+.chuck:before,
+.charlie:before,
+.mico:before,
+.melodie:before {
+    background-color: var(--no-skin-mythic) !important;
+}
+
+.nita:before,
+.el-primo:before,
+.poco:before,
+.rosa:before {
+    background-color: var(--no-skin-rare) !important;
+}
+
+.tick:before,
+.bit:before,
+.penny:before,
+.jacky:before,
+.gus:before {
+    background-color: var(--no-skin-super-rare) !important;
+}
+
+.pam:before,
+.frank:before,
+.nani:before,
+.griff:before,
+.grom:before,
+.bonnie:before,
+.gale:before,
+.ash:before,
+.mandy:before,
+.hank:before,
+.larry:before,
+.angelo:before {
+    background-color: var(--no-skin-epic) !important;
+}
+
 .shelly:before {
-  background-color: #b8edff;
+  background-color: var(--default);
 }
 
 .nita:before,
@@ -76,7 +141,7 @@
 .barley:before,
 .poco:before,
 .rosa:before {
-  background-color: #5afe01;
+  background-color: var(--rare);
 }
 
 .jessie:before,
@@ -89,7 +154,7 @@
 .carl:before,
 .jacky:before,
 .gus:before {
-  background-color: #0271ff;
+  background-color: var(--super-rare);
 }
 
 .bo:before,
@@ -117,7 +182,7 @@
 .pearl:before,
 .larry:before,
 .angelo:before {
-  background-color: #d500ff;
+  background-color: var(--epic);
 }
 
 .mortis:before,
@@ -144,7 +209,7 @@
 .charlie:before,
 .mico:before,
 .melodie:before {
-  background-color: #ff1603;
+  background-color: var(--mythic);
 }
 
 .spike:before,
@@ -157,7 +222,7 @@
 .chester:before,
 .cordelius:before,
 .kit:before {
-  background-color: #f9ff01;
+  background-color: var(--legendary);
 }
 
 .brawler {
