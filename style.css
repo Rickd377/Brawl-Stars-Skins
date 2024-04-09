@@ -327,3 +327,6 @@ input {
   display: block;
 }
 
+.dropdown-content img {
+  margin: auto;
+}
