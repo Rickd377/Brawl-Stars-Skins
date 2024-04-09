@@ -1,3 +1,4 @@
+//search
 document.querySelector('#search-input').
 addEventListener('input', filterList);
 
@@ -16,6 +17,7 @@ function filterList() {
     });
 }
 
+//sort
 let isSorted = false;
 let originalOrder = [];
 
@@ -39,4 +41,29 @@ function sortList() {
   const parent = listItems[0].parentNode;
 
   listItems.forEach(item => parent.appendChild(item));
+}
+
+
+// scrollbtn
+let mybutton = document.getElementById("scrollToTop");
+
+// Wanneer de gebruiker 20px van de top van het document scrollt, toon de knop
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// Wanneer de gebruiker op de knop klikt, scroll naar de top van het document
+mybutton.onclick = function() {topFunction()};
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 }

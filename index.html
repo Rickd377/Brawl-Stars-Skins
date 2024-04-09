@@ -9,23 +9,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
   <title>My Brawl Stars Skins</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/logo.png">
 </head>
 
 <body>
+
   <div class="search">
-    <div class="filter"></div>
+    <div class="filter" title="Sort By Alphabet"></div>
 
     <div class="container col-6 mt-5">
-      <input type="text" class="form-control mb-5 p-3" placeholder="Search..." id="search-input" autocomplete="off" />
+      <input type="text" class="form-control mb-5 p-3" title="Search" placeholder="Search..." id="search-input" autocomplete="off" />
     </div>
   </div>
+
+  <!-- scrollbtn -->
+  <button id="scrollToTop" title="Scroll Back To Top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <!-- table -->
   <div class="table-box">
     <!-- table header -->
     <div class="table-row table-head">
       <div class="table-cell first-cell">
-        <p>Brawlers</p>
+        <a title="Brawler Information" href="about.html"><p>Brawlers</p></a>
       </div>
       <div class="table-cell">
         <p>Rare</p>
@@ -2012,13 +2017,28 @@
     <!-- spike -->
     <div class="table-row">
       <div class="table-cell first-cell brawler spike">
-        <p>Spike</p>
+        <div class="dropdown">
+          <span>Spike</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/spike/spike_default_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
-        <p>Mask Spike</p>
+        <div class="dropdown">
+          <span>Mask Spike</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/spike/spike_mask_spike_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell super-rare">
-        <p>Sakura Spike</p>
+        <div class="dropdown">
+          <span>Sakura Spike</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/spike/spike_sakura_spike_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell epic">
         <p></p>
@@ -2034,7 +2054,12 @@
     <!-- crow -->
     <div class="table-row">
       <div class="table-cell first-cell brawler crow">
-        <p>Crow</p>
+        <div class="dropdown">
+          <span>Crow</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/crow/crow_default_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
         <p></p>
@@ -2043,7 +2068,12 @@
         <p></p>
       </div>
       <div class="table-cell epic">
-        <p>Crowbone</p>
+        <div class="dropdown">
+          <span>Crowbone</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/crow/crow_crowbone_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell mythic">
         <p></p>
@@ -2056,19 +2086,39 @@
     <!-- leon -->
     <div class="table-row">
       <div class="table-cell first-cell brawler leon">
-        <p>Leon</p>
+        <div class="dropdown">
+          <span>Leon</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/leon/leon_default_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
-        <p>Leon The Stray</p>
+        <div class="dropdown">
+          <span>Leon The Stray</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/leon/leon_leon_the_stray_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell super-rare">
         <p></p>
       </div>
       <div class="table-cell epic">
-        <p>[True Silver Leon]</p>
+        <div class="dropdown">
+          <span>[True Silver Leon]</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/leon/leon_true_silver_leon_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell mythic">
-        <p>[True Gold Leon]</p>
+        <div class="dropdown">
+          <span>[True Gold Leon]</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/leon/leon_true_gold_leon_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell last-cell legendary">
         <p></p>
@@ -2078,16 +2128,31 @@
     <!-- sandy -->
     <div class="table-row">
       <div class="table-cell first-cell brawler sandy">
-        <p>Sandy</p>
+        <div class="dropdown">
+          <span>Sandy</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/sandy/sandy_default_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
-        <p>Sleepy Sandy</p>
+        <div class="dropdown">
+          <span>Sleepy Sandy</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/sandy/sandy_sleepy_sandy_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell super-rare">
         <p></p>
       </div>
       <div class="table-cell epic">
-        <p>Lantern Sandy</p>
+        <div class="dropdown">
+          <span>Lantern Sandy</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/sandy/sandy_lantern_sandy_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell mythic">
         <p></p>
@@ -2100,7 +2165,12 @@
     <!-- amber -->
     <div class="table-row">
       <div class="table-cell first-cell brawler amber">
-        <p>Amber</p>
+        <div class="dropdown">
+          <span>Amber</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/amber/amber_default_001.png" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
         <p></p>
@@ -2122,7 +2192,12 @@
     <!-- meg -->
     <div class="table-row">
       <div class="table-cell first-cell brawler meg">
-        <p>Meg</p>
+        <div class="dropdown">
+          <span>Meg</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/meg/meg_default_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
         <p></p>
@@ -2144,16 +2219,31 @@
     <!-- surge -->
     <div class="table-row">
       <div class="table-cell first-cell brawler surge">
-        <p>Surge</p>
+        <div class="dropdown">
+          <span>Surge</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/surge/surge_default_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
         <p></p>
       </div>
       <div class="table-cell super-rare">
-        <p>Surge Kong</p>
+        <div class="dropdown">
+          <span>Surge Kong</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/surge/surge_surge_kong_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell epic">
-        <p>Mecha Paladin Surge</p>
+        <div class="dropdown">
+          <span>Mecha Paladin Surge</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/surge/surge_mecha_paladin_surge_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell mythic">
         <p></p>
@@ -2166,7 +2256,12 @@
     <!-- chester -->
     <div class="table-row">
       <div class="table-cell first-cell brawler chester">
-        <p>Chester</p>
+        <div class="dropdown">
+          <span>Chester</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/chester/chester_default_001.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
         <p></p>
@@ -2188,17 +2283,37 @@
     <!-- cordelius -->
     <div class="table-row">
       <div class="table-cell first-cell brawler cordelius">
-        <p>Cordelius</p>
+        <div class="dropdown">
+          <span>Cordelius</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/cordelius/default_cordelius.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
-        <p>Poison Cap Cordelius</p>
+        <div class="dropdown">
+          <span>Poisoncap Cordelius</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/cordelius/poisoncap_cordelius.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell super-rare">
         <p></p>
       </div>
       <div class="table-cell epic">
-        <p>Odin Cordelius</p>
-        <p>Sporemind Cordelius</p>
+        <div class="dropdown">
+          <span>Odin Cordelius</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/cordelius/cordelius_odin_cordelius_364.webp" alt="">
+          </div>
+        </div>
+        <div class="dropdown">
+          <span>Sporemind Cordelius</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/cordelius/sporemind_cordelius.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell mythic">
         <p></p>
@@ -2211,18 +2326,43 @@
     <!-- kit -->
     <div class="table-row">
       <div class="table-cell first-cell brawler kit">
-        <p>Kit</p>
+        <div class="dropdown">
+          <span>Kit</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/kit/default_kit.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell rare">
-        <p>Billy The Kit</p>
+        <div class="dropdown">
+          <span>Billy The Kit</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/kit/kit_billy_the_kit_happy_404.webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell super-rare">
         <p></p>
       </div>
       <div class="table-cell epic">
-        <p>Kitboxer</p>
-        <p>Kitboxer Darkpaw</p>
-        <p>Kitboxer Goldpaw</p>
+        <div class="dropdown">
+          <span>Kitboxer</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/kit/kit_kitboxer.webp" alt="">
+          </div>
+        </div>
+        <div class="dropdown">
+          <span>Kitboxer Darkpaw</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/kit/kit_kitboxer_darkpaw.webp" alt="">
+          </div>
+        </div>
+        <div class="dropdown">
+          <span>Kitboxer Goldpaw</span>
+          <div class="dropdown-content">
+            <img src="Brawler_images/kit/kit_kitboxer_goldpaw (1).webp" alt="">
+          </div>
+        </div>
       </div>
       <div class="table-cell mythic">
         <p></p>
