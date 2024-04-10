@@ -300,9 +300,15 @@ input {
 
 .search {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+.left-items {
+  display: flex;
+  gap: 10px; /* Voegt ruimte toe tussen de items */
 }
 
 .table-box img {
@@ -365,4 +371,123 @@ input {
   font-size: 20px;
   margin-top: -3px;
   margin-left: 1px;
+}
+
+.linkabout a {
+  text-decoration: none;
+  color: #555;
+  font-family: var(--roboto);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+/* about page styling */
+
+.block {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 50px 60px;
+  width: 35%;
+  background-color: #e9e9e9;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  min-height: 335px;
+}
+
+.block img {
+  max-height: 200px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.block h2, .block h3, .block h4 {
+  margin: 7px 10px 3px 10px;
+  font-family: var(--roboto);
+}
+
+.block p {
+  margin: 3px 10px 7px 10px;
+  word-wrap: break-word;
+  font-family: var(--roboto);
+}
+
+.block .gadgets, .starpowers {
+  width: 150px;
+  height: 70px;
+  margin: 10px 20px;
+}
+
+.block .gadgets img, .starpowers img, .hypercharge img {
+  max-height: 50px;
+  margin: 5px;
+  padding: 2px;
+}
+
+.block .hyperalign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block .hypercharge {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+}
+
+.block .topitems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.block .gadgetsandstarpowers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dropdown-about {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content-about {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-about:hover .dropdown-content-about {
+  display: block;
+}
+
+.dropdown-content-about span {
+  color: #4ae100;
+}
+
+.dropdown-content-about h3 {
+  color: #fbbc05;
 }
