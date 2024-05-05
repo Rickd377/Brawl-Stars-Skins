@@ -67,3 +67,19 @@ function topFunction() {
     behavior: 'smooth'
   });
 }
+
+
+
+// skin / brawler counter
+// Selecteer de tabelcellen in de tabelkop
+var tableHeadCells = document.querySelectorAll('.table-head .table-cell');
+
+// Loop door elke tabelcel in de tabelkop
+tableHeadCells.forEach(function(cell, index) {
+  // Selecteer de dropdowns in de overeenkomstige kolom
+  var dropdowns = document.querySelectorAll(`.table-row .table-cell:nth-child(${index + 1}) .dropdown`);
+
+  // Voeg de telling toe aan de tabelkopcel
+  cell.textContent += ` (${dropdowns.length})`;
+});
+
